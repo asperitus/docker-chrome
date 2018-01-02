@@ -27,6 +27,6 @@ volume=""
 
 [ ! -z "${DHNT_VCAP_HOME}" ] && volume="$volume -v ${DHNT_VCAP_HOME}:/home/vcap"
 
-docker run $proxy $volume -e DISPLAY=${DISPLAY} -it --rm --privileged --name dhnt-chrome dhnt/chrome
+docker run $proxy $volume -e DISPLAY=${DISPLAY} -it --rm --privileged --name dhnt-chrome-$$ dhnt/chrome
 
 #

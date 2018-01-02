@@ -49,7 +49,9 @@ USER $LOGIN
 
 WORKDIR /home/$LOGIN
 
+ADD .dhnt $HOME
+
 ##
-CMD ["/bin/bash"]
+CMD ["/usr/bin/google-chrome"]
 
 ##
